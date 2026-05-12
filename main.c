@@ -3,11 +3,14 @@
 #include <time.h>
 int main(){
 
-  //imprime o cabecalho do nosso jogo
-  printf("****************************************\n");
-  printf("*Bem vindo ao nosso jogo de adivinhacao*\n");
-  printf("****************************************\n");
-
+  printf("               .__                                \n");
+  printf("__  _  __ ____ |  |   ____  ____   _____   ____   \n");
+  printf("\\ \\/ \\/ // __ \\|  | _/ ___\\/  _ \\ /     \\_/ __ \\  \n");
+  printf(" \\     /\\  ___/|  |_\\  \\__(  <_> )  Y Y  \\  ___/  \n");
+  printf("  \\/\\_/  \\___  >____/\\___  >____/|__|_|  /\\___  > \n");
+  printf("             \\/          \\/            \\/     \\/  \n");
+  printf("\n\n");
+  
   int segundos = time(0);
   srand(segundos);
 
@@ -35,18 +38,7 @@ int main(){
     break;
 }
 
-  /*if(nivel == 1){
-    numeroTentativas = 20;
-  }else if(nivel  == 2){
-    numeroTentativas = 15;
-  }else if(nivel == 3){
-    numeroTentativas = 6;
-  }else{
-    printf("opcao invalida\n");
-
-
-  }*/
-    for(int i = 1; i <= numeroTentativas; i++){
+      for(int i = 1; i <= numeroTentativas; i++){
   //for(int i=1; i<=NUMERO_DE_TENTATIVAS; i++){
     printf("tentativa %d\n", tentativas);
     printf("chute um numero: ");
@@ -66,7 +58,7 @@ int main(){
     int maior = chute > numeroSecreto;
 
     if(acertou){
-
+  
       break;
 
     }
@@ -87,11 +79,27 @@ int main(){
 
   if(acertou){
     printf("voce ganhou!\n");
+    printf("\n\n");
+    printf("                                 _        \n");
+    printf("                                | |      \n");
+    printf("  ___ ___  _ __   __ _ _ __ __ _| |_ ___ \n");
+    printf(" / __/ _ \| '_ \\ / _` | '__/ _` | __/ __|\n");
+    printf("| (_| (_) | | | | (_| | | | (_| | |_\__ \\ \n");
+    printf(" \\___\\___/|_| |_|\\__, |_|  \\__,_|\\__|___/\n");
+    printf("                  __/ |                  \n");
+    printf("                 |___/  \n");
+    printf("\n");
     printf("Voce acertou em %d tentativas!\n", tentativas);
     printf("total de pontos: %.1f\n", pontos);
   }else{
     printf("voce perdeu! tente novamente.\n");
-
+    printf("\n\n");
+    printf("  ________________________ ___.__.  \n");
+    printf(" /  ___/  _ \\_  __ \\_  __ <   |  |  \n");
+    printf(" \\___ (  <_> )  | \\/|  | \\/\\___  |  \n");
+    printf("/____  >____/|__|   |__|   / ____|  \n");
+    printf("     \\/                    \\/       \n");
+    printf("\n");
   }
 
   return 0;
